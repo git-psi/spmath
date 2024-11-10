@@ -1,0 +1,197 @@
+/*-----------------------------*\
+	$BASE
+\*-----------------------------*/
+body{
+	font-family: Arial, Helvetica, sans serif;
+	font-size: 1.1em;
+	line-height:1.4;
+	min-width: 300px;
+	height:100%;
+	background-position: center;
+	margin: 0;
+	padding: 0;
+	background-color: #FFCC00;	
+}
+
+header, nav, article, aside, footer{
+	display: block;
+}
+
+/*-----------------------------*\
+	$HEADER
+\*-----------------------------*/
+.header{
+	position: fixed;
+	top: 0;
+	left: 0;							
+	right: 0;
+	font-size: 3em;
+	font-weight: bold;
+	text-align: center;
+	color: #FFCC00;	
+	height: 70px;		
+	line-height: 70px;	
+    background-color: #990000;
+}
+
+/*-----------------------------*\
+	$PAGE
+\*-----------------------------*/
+.site-content{
+	padding-top: 70px;	
+	max-width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.content{
+	vertical-align: top;
+	margin: 0;
+}
+
+/*-----------------------------*\
+	$MENU
+\*-----------------------------*/
+.menu{
+	vertical-align: top;
+	max-width: 180px;
+	min-width: 160px;	
+	background-color: #EFDB8E;
+    padding: 5px;
+    border: 5px solid #990000;
+	margin: 5px 0 5px 0;
+}
+.menu ul {
+	padding: 0;
+	list-style: none;
+}
+.menu li {
+    font-weight: bold;
+	color:  #990000;	
+	text-align: center;
+	padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+/*-----------------------------*\
+	$ARTICLE
+\*-----------------------------*/
+.container{
+	vertical-align: top;
+	background-color: #ffffe5;	
+    padding: 15px;
+    border: 5px solid #990000;
+	margin: 5px 0 5px 0;
+}
+.container a {
+    color: #990000;	
+}
+.sip {
+	text-align: center;
+	font-weight: bold;
+}
+.livre {
+	text-align: center;
+}
+.tarif{
+	border: 1px solid;
+	width: 90%;
+	background: #CCFFFF;
+	padding:5px 5px 5px 20px;
+}
+.liens{ 
+	border-collapse: collapse;
+	padding: 5px;
+}
+.liens td{
+	border: 1px solid black;
+}
+
+/*	TABLEAU DE "LIENS"	*/
+.bloc{
+    display: table;
+	border-collapse: collapse;
+    table-layout: fixed;
+}
+.bloc > div {
+	display: table-row;
+	border: 1px solid black;
+}
+.bloc > div > div {
+    display: table-cell;
+}
+
+/*-----------------------------*\
+	$STYLES
+\*-----------------------------*/
+a{ 
+	color:inherit; 
+}
+a:link, a:visited {
+	text-decoration: none;
+}
+a:hover, a:focus, a:active {
+	text-decoration: underline;
+}
+centre {
+	text-align: center;
+}
+strong {
+	font-weight: bold;
+}
+mark {
+	font-weight: bold;
+	background-color: inherit;
+	color: red;
+}
+/* icon hamburger */
+.header__icon {
+	display: none;
+}
+/*-----------------------------*\
+	$RESPONSIVE 
+\*-----------------------------*/
+@media only screen and (max-width: 590px){
+		
+	.site-container{
+		height: 100%;
+	}
+	.container{
+		width: 90%;
+		overflow-y: hidden;	
+	}
+	/* icon hamburger */
+	.header__icon{
+		display: block;
+		float: left;
+		margin-left: 5px;
+		cursor: pointer; 
+	}
+	.menu{
+		display: none;	
+	}					
+	.with--sidebar .menu{
+		display: table-cell;
+		min-width: 180px;
+	}
+	.container{
+		display: table-cell;
+	}					
+	.with--sidebar .container{
+		display: none;	
+	}
+
+	/*	TABLEAU DE "LIENS"	*/
+	.bloc{
+		display: table;
+		border-collapse: collapse;
+		table-layout: fixed;
+	}
+	.bloc > div {
+		display: table-row;
+		border: 1px solid black;
+	}
+	.bloc > div > div {
+		display: block;
+	}
+}
