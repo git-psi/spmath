@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+	<?php include 'includes/hdp_menu.php' ?>
+			<td>
+			  <article class="container">
+			     <a href="http://www.generation5.fr/produits/Maths-Lycee-Seconde--Reviser-les-fondamentaux--1\
+				      611--24305--ens.php" target="_blank"><img src="images/maths_lycee.jpg" width="250" height="370" alt="maths_2nde"></img></a>
+</center>
+<br />
+                                Octobre 2017, éditions <a href="http://www.generation5.fr/produits/Maths-Lycee-Seconde--Revi\
+								ser-les-fondamentaux--1611--24305--ens.php" target="_blank">Génération 5</a><br>
+<strong>Auteurs : </strong>Véronique Perdu, Jean-Michel Béchu
+<br /><br />
+Ouvrage qui vise à faire acquérir des automatismes en calcul en partant des fondamentaux.
+<br /><br />
+
+				<center>
+				<a href="http://www.generation5.fr/produits/Maths-Lycee-Seconde--Reviser-les-fondamentaux--1611--24305--ens.php" target="_blank"><img src="images/maths_lycee.jpg" width="250" height="370" alt="maths_2nde"></img></a>
+				</center>
+				<br />
+				Octobre 2017, éditions <a href="http://www.generation5.fr/produits/Maths-Lycee-Seconde--Reviser-les-fondamentaux--1611--24305--ens.php" target="_blank">Génération 5</a><br>
+				<strong>Auteurs : </strong>Véronique Perdu, Jean-Michel Béchu
+				<br /><br />
+				 Ouvrage qui vise à faire acquérir des automatismes en calcul en partant des fondamentaux.
+				<br /><br />
+				</article>		<!-- container -->
+			</td>
+	<?php include 'includes/bdp.php' ?>
