@@ -58,6 +58,7 @@ header, nav, article, aside, footer{
 	min-width: 160px;	
 	background-color: #EFDB8E;
     padding: 5px;
+    box-sizing: border-box;
     border: 5px solid #990000;
 	margin: 5px 0 5px 0;
 }
@@ -151,47 +152,87 @@ mark {
 /*-----------------------------*\
 	$RESPONSIVE 
 \*-----------------------------*/
-@media only screen and (max-width: 590px){
-		
-	.site-container{
-		height: 100%;
-	}
-	.container{
-		width: 90%;
-		overflow-y: hidden;	
-	}
-	/* icon hamburger */
-	.header__icon{
-		display: block;
-		float: left;
-		margin-left: 5px;
-		cursor: pointer; 
-	}
-	.menu{
-		display: none;	
-	}					
-	.with--sidebar .menu{
-		display: table-cell;
-		min-width: 180px;
-	}
-	.container{
-		display: table-cell;
-	}					
-	.with--sidebar .container{
-		display: none;	
-	}
+@media only screen and (max-width: 590px) {
+    .site-container {
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
+    .main-content {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .menu {
+        position: fixed;
+        left: -200px;
+        top: 60px;
+        height: calc(100% - 65px);
+        width: 100%;
+		max-width: none;
+        transition: left 0.3s ease;
+        z-index: 100;
+    }
+    
+    .menu.active {
+        left: 0;
+    }
+    
+    .header__icon {
+        display: block;
+        float: left;
+        margin-left: 5px;
+        cursor: pointer;
+    }
+    
+    .container {
+        width: 90%;
+        overflow-y: hidden;
+    }
+    
+    .menu {
+        display: none;
+    }
+    
+    .with--sidebar .menu {
+        display: block;
+        width: 100%;
+    }
+    
+    .container {
+        display: table-cell;
+    }
+    
+    .with--sidebar .container {
+        display: none;
+    }
 
-	/*	TABLEAU DE "LIENS"	*/
-	.bloc{
-		display: table;
-		border-collapse: collapse;
-		table-layout: fixed;
-	}
-	.bloc > div {
-		display: table-row;
-		border: 1px solid black;
-	}
-	.bloc > div > div {
-		display: block;
-	}
+    /*	TABLEAU DE "LIENS"	*/
+    .bloc {
+        display: table;
+        border-collapse: collapse;
+        table-layout: fixed;
+    }
+    
+    .bloc > div {
+        display: table-row;
+        border: 1px solid black;
+    }
+    
+    .bloc > div > div {
+        display: block;
+    }
+}
+
+.container p {
+    margin-bottom: 1em;
+}
+
+.container ul {
+    margin: 1em 0;
+}
+
+.container h3 {
+    margin: 1.5em 0 0.5em 0;
 }
